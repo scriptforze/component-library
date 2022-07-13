@@ -1,5 +1,5 @@
 {
-  "name": "component-library",
+  "name": "@scriptforze/component-library",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "url": "git://github.com/scriptforze/component-library.git"
+  },
   "dependencies": {
     "@types/react": "^18.0.12",
     "antd": "^4.21.0",
