@@ -72,8 +72,8 @@ jobs:
         with:
           node-version: 16.x
           registry-url: https://npm.pkg.github.com/
-          scope: "@dotbc"
-      - run: echo "registry=https://npm.pkg.github.com/@dotbc" >> .npmrc
+          scope: "@scriptforze"
+      - run: echo "registry=https://npm.pkg.github.com/@scriptforze" >> .npmrc
       - run: npm publish $(ls *.tgz)
         env:
           NODE_AUTH_TOKEN: ${{secrets.AUTH_TOKEN}}
