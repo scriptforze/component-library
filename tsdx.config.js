@@ -1,4 +1,5 @@
 const replace = require("@rollup/plugin-replace");
+const styles = require("rollup-plugin-styles");
 
 module.exports = {
   rollup(config, opts) {
@@ -9,6 +10,15 @@ module.exports = {
             preventAssignment: true,
           })
         : p
+    );
+
+    config.plugins.push(
+      styles({
+        less: {
+          math: "always",
+          javascriptEnabled: true,
+        },
+      })
     );
     return config;
   },
