@@ -16,6 +16,7 @@ module.exports = {
       styles({
         less: {
           math: "always",
+          minimize: true,
           javascriptEnabled: true,
         },
       })
