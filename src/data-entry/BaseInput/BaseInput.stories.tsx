@@ -14,5 +14,5 @@ const Template: Story<BaseInputProps> = (args) => <BaseInput {...args} />;
 
 // Reuse that template for creating different stories
 export const Primary = Template.bind({});
-Primary.storyName = "Base Input Component"
+Primary.storyName = "Base Input Component";
 Primary.args = { size: "large" };
