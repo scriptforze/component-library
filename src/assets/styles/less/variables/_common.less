@@ -1,4 +1,4 @@
-//@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+//@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 
 @theme: light;
 @rtl-enable: true;
@@ -11,14 +11,14 @@
 @popover-background: @component-background;
 @popover-customize-border-color: @border-color-split;
 
-@font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+@font-family: SofiaPro, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 @code-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
   monospace;
 @text-color: @gray;
 @text-color-secondary: @gray-light;
-@text-muted: rgba(@gray-light-rgb, 0.7);
+@text-muted: rgba(@gray-light, 0.7);
 @text-color-inverse: @white;
 @icon-color: inherit;
 @icon-color-hover: @gray;
@@ -74,7 +74,7 @@
 @height-lg: 48px;
 @height-sm: 36px;
 
-@item-active-bg: @primary-color;
+@item-active-bg: @primary-1;
 @item-hover-bg: #f5f5f5;
 
 @iconfont-css-prefix: anticon;
@@ -387,7 +387,7 @@
 @input-padding-vertical-lg: ceil(
     (@input-height-lg - @font-size-lg * @line-height-base) / 2 * 10
   ) / 10 - @border-width-base;
-@input-placeholder-color: rgba(@gray-light-rgb, 0.4);
+@input-placeholder-color: rgba(@gray-light, 0.4);
 @input-color: @text-color;
 @input-icon-color: @input-color;
 @input-border-color: @border-color-base;
@@ -537,7 +537,7 @@
 @menu-item-color: @text-color;
 @menu-highlight-color: @primary-color;
 @menu-highlight-danger-color: @error-color;
-@menu-item-active-bg: rgba(@primary-color-rgb, 0.1);
+@menu-item-active-bg: rgba(@menu-highlight-color, 0.1);
 @menu-item-active-danger-bg: @red-1;
 @menu-item-active-border-width: 3px;
 @menu-item-group-title-color: @text-color-secondary;
@@ -558,7 +558,7 @@
 @menu-dark-arrow-color: @white;
 @menu-dark-submenu-bg: @menu-dark-bg;
 @menu-dark-highlight-color: #fff;
-@menu-dark-item-active-bg: rgba(@white-rgb, 0.1);
+@menu-dark-item-active-bg: rgba(@white, 0.1);
 @menu-dark-item-active-danger-bg: @error-color;
 @menu-dark-selected-item-icon-color: @white;
 @menu-dark-selected-item-text-color: @white;
@@ -578,7 +578,7 @@
 @table-body-sort-bg: #fafafa;
 @table-row-hover-bg: @background-color-light;
 @table-selected-row-color: inherit;
-@table-selected-row-bg: rgba(@primary-color-rgb: 0.1);
+@table-selected-row-bg: rgba(@primary-color: 0.1);
 @table-body-selected-sort-bg: @table-selected-row-bg;
 @table-selected-row-hover-bg: darken(@table-selected-row-bg, 2%);
 @table-expanded-row-bg: #fbfbfb;
@@ -619,7 +619,7 @@
 // ---
 @picker-bg: @component-background;
 @picker-basic-cell-hover-color: @item-hover-bg;
-@picker-basic-cell-active-with-range-color: rgba(@primary-color-rgb, 0.1);
+@picker-basic-cell-active-with-range-color: rgba(@primary-color, 0.1);
 @picker-basic-cell-hover-with-range-color: lighten(@primary-color, 35%);
 @picker-basic-cell-disabled-bg: @disabled-bg;
 @picker-border-color: @border-color-split;
@@ -698,7 +698,7 @@
 @comment-font-size-base: @font-size-base;
 @comment-font-size-sm: @font-size-sm;
 @comment-author-name-color: @text-color-secondary;
-@comment-author-time-color: rgba(@gray-dark-rgb, 0.6);
+@comment-author-time-color: rgba(@gray-dark, 0.6);
 @comment-action-color: @text-color-secondary;
 @comment-action-hover-color: #595959;
 @comment-actions-margin-bottom: inherit;
@@ -813,11 +813,11 @@
 @slider-margin: 10px 6px 10px;
 @slider-rail-background-color: @background-color-base;
 @slider-rail-background-color-hover: #e1e1e1;
-@slider-track-background-color: rgba(@primary-color-rgb, 0.8);
+@slider-track-background-color: rgba(@primary-color, 0.8);
 @slider-track-background-color-hover: @primary-color;
 @slider-handle-border-width: 2px;
 @slider-handle-background-color: @component-background;
-@slider-handle-color: rgba(@primary-color-rgb, 0.8);
+@slider-handle-color: rgba(@primary-color, 0.8);
 @slider-handle-color-hover: @primary-color;
 @slider-handle-color-focus: tint(@primary-color, 20%);
 @slider-handle-color-focus-shadow: fade(@primary-color, 12%);
@@ -838,7 +838,7 @@
 @tree-directory-selected-color: #fff;
 @tree-directory-selected-bg: @primary-color;
 @tree-node-hover-bg: @item-hover-bg;
-@tree-node-selected-bg: rgba(@primary-color-rgb, 0.1);
+@tree-node-selected-bg: rgba(@primary-color, 0.1);
 
 // Collapse
 // ---
@@ -865,7 +865,7 @@
 @transfer-item-height: 44px;
 @transfer-disabled-bg: @disabled-bg;
 @transfer-list-height: 275px;
-@transfer-item-hover-bg: rgba(@primary-color-rgb, 0.1);
+@transfer-item-hover-bg: rgba(@primary-color, 0.1);
 @transfer-item-padding-vertical: 6px;
 @transfer-list-search-icon-top: 12px;
 
