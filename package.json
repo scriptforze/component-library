@@ -7,8 +7,8 @@
     "build": "tsdx build",
     "start": "tsdx watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o docs",
+    "storybook": "start-storybook -p 6006 -s ./src/assets",
+    "build-storybook": "build-storybook -s ./src/assets -o docs",
     "postbuild": "cp package.json dist"
   },
   "keywords": [],

@@ -1,5 +1,6 @@
 import "antd/dist/antd.css";
 import theme from "../src/theme";
+import DefaultTheme from "./themes/default";
 import { addDecorator } from "@storybook/react";
 import { ThemeProvider } from "styled-components";
 import { withThemes } from "@react-theming/storybook-addon";
@@ -13,5 +14,8 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/,
     },
+  },
+  docs: {
+    theme: DefaultTheme,
   },
 };
